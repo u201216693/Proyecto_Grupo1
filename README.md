@@ -2,6 +2,6 @@
 "Analisis de Trafico Malicioso en Equipos IOT"
 
 # Integrantes:
-Ydael Vargas
-Rosa Valencia 
+Ydael Vargas &
+Rosa Valencia &
 Elizabeth Longa
