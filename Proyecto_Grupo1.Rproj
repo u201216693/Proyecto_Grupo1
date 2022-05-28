@@ -11,8 +11,5 @@ Encoding: UTF-8
 
 RnwWeave: Sweave
 LaTeX: pdfLaTeX
-<<<<<<< HEAD
-=======
 
 LineEndingConversion: Posix
->>>>>>> c91cc6c6034af5c57ada64fab571fd0c2458de62
