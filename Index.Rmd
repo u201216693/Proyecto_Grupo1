@@ -23,7 +23,19 @@ Internet de las cosas (IoT) es una de las tecnologías líderes en la actualidad
 
 IoT es vulnerable a los riesgos de seguridad en cada capa arquitectónica y ha enfrentado desafíos de seguridad desde su aparición. Los dispositivos IoT requieren sistemas de autenticación sólidos, que muchos dispositivos IoT no tienen debido a limitaciones de recursos como CPU o limitaciones de energía/batería. La capa de aplicación también está abierta a ataques de virus, gusanos y ataques de phishing.
 
-Uno de los métodos clave para prevenir este tipo de ataques es el despliegue de un sistema de detección de intrusos (IDS) sólido que pueda detectar cualquier tipo de intrusión. Actualmente, los IDS utilizan dos métodos principales para detectar ataques: basados en firmas y basados en anomalías. Los métodos basados en firmas dependen de los ataques conocidos y sus actualizaciones requieren mucho tiempo. Los ataques basados en anomalías, por otro lado, se basan en datos y dependen de que la máquina comprenda el comportamiento normal y rechace
+Uno de los métodos clave para prevenir este tipo de ataques es el despliegue de un sistema de detección de intrusos (IDS) sólido que pueda detectar cualquier tipo de intrusión. Actualmente, los IDS utilizan dos métodos principales para detectar ataques: basados en firmas y basados en anomalías. Los métodos basados en firmas dependen de los ataques conocidos y sus actualizaciones requieren mucho tiempo. Los ataques basados en anomalías, por otro lado, se basan en datos y dependen de que la máquina comprenda el comportamiento normal y rechace.
+
+Como segundo objetivo del proyecto fue la investigación de la aplicación de algoritmos de aprendizaje automático, que es un procedimiento que se ejecuta en datos y se utiliza para crear un modelo de aprendizaje automático listo para la producción, utilizan datos históricos como entrada para predecir nuevos valores de salida. A continuación, una pequeña descripción de los algoritmos de ML utilizados.
+
+**Árbol Decisión**
+El algoritmo del árbol de decisiones en el aprendizaje automático es uno de los algoritmos más populares en uso en la actualidad; este es un algoritmo de aprendizaje supervisado que se utiliza para clasificar problemas. Funciona bien clasificando para variables dependientes categóricas y continuas. En este algoritmo, dividimos la población en dos o más conjuntos homogéneos en función de los atributos/variables independientes más significativos.
+
+**Naïve-Bayes**
+El algoritmo de clasificación Naive Bayes es un clasificador probabilístico. Se basa en modelos de probabilidad que incorporan fuertes supuestos de independencia. Los supuestos de independencia muchas veces no tienen impacto en la realidad. Por lo tanto, son considerados como ingenuos.
+
+**Regresión Logística**
+La regresión logística se utiliza para estimar valores discretos (generalmente valores binarios como 0/1) a partir de un conjunto de variables independientes. Ayuda a predecir la probabilidad de un evento ajustando los datos a una función logit. También se llama regresión logit.
+
 
 ## **METODOLOGÍA**
 
@@ -65,7 +77,30 @@ En este capitulo vamos explorar datos perdidos para ello nos soportaremos sobre 
 
 ![**Explorar datos pérdidos**](captura2.PNG){withd=20%}
 
-### **Tratamiento de outliers**
+Procedemos a remplazar valores para identificar y visualizar los valores nulos.
+
+![**Gráfico de distribución de valores nulos**](captura3.PNG){withd=20%}
+
+El análisis del impacto serealiza en base al siguiente cuadro:
+
+![**Cuadro de distribución de valores nulos**](captura4.PNG){withd=20%}
+
+Se proceda a eliminar las variables (**service, tunnel_parents, local_resp, local_orig**) con alto procentaje de datos faltantes dado que perjudica las interpretaciones (>90%). 
+
+![**Cuadro de distribución de valores nulos**](captura5.PNG){withd=20%}
+
+Se identifica que existen 819457 registros que tienen uno o mas datos perdidos, existen 2875596 datos perdidos. A continuación se grafica la cantidad de valores perdidos, para visualizar la relacion entre variables.
+
+![**Cuadro de distribución de valores nulos**](captura6.PNG){withd=20%}
+![**Gráfico de distribución de valores nulos**](captura7.PNG){withd=20%}
+
+De acuerdo al análisis de los gráficos se elimina la columna history que describe el historial de conexión y la columna detailed_label que describe el tipo de captura maliciosa, se elimina la columna detailed_label dado que se tiene el taget en la columna label; todas las candidatas a eliminar no son relevante para nuestro estudio.
+Tambien eliminamos la variabla ts que es la marca de tiempo de la captura(de manera correlativa y autoincremental).
+
+
+### **Imputación de datos pérdidos**
+
+
 ### **Transformación de variables**
 ### **Creación de variables dummy**
 ### **Identificación de variables con variancia cero o casi cero**
