@@ -15,7 +15,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ## **OBJETIVO**
 
 	- Identificar principales tipo de ataques en IOT
-	- Determinar si un evento identificado es benigno o maligno. 
+	- Determinar si un evento identificado es benigno o maligno a traves de modelos de predicción (ENTRENANDO CON REGRESION LOGISTICA, ARBOLES DE DECISION Y NAIVE BAYES). 
 
 ## **INTRODUCCIÓN**
 
