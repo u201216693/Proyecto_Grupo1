@@ -1,10 +1,12 @@
 ---
-title: "Analisis de Trafico y modelo predictivo para la detección de eventos maliciosos en Equipos IOT"
+title: Analisis de Trafico y modelo predictivo para la detección de eventos maliciosos
+  en Equipos IOT
 author: "Grupo1 (Rosa Valencia - Ydael Vargas - Elizabeth Longa)"
 date: 'Fecha: 2022-05-29'
-output: html_document
+output:
+  html_document: default
+  pdf_document: default
 fontsize: 10pt
-toc: TRUE
 ---
 
 ```{r setup, include=FALSE}
