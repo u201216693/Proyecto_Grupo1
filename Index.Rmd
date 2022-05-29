@@ -47,12 +47,23 @@ A continuación se procede con la exploración de datos con la finalidad deident
 En la gráfica se identifica **23 variables** iniciales y **1008748** registros, así como los tipos de variables y datos estadísticos como la media, mediana por cada variable.
 Evaluamos la variable target **label Benign y Malicious**. El resultado es el siguiente:
 
-- Benign      469275 (0.4652) 
-- Malicious   539473 (0.5348)
+- Benign:      469275 (0.4652) 
+- Malicious:   539473 (0.5348)
+
+Evaluamos la variable **detailed_label**. El resultado es el siguiente:
+
+- No info:                       469275
+- C&C:                           8
+- PartOfAHorizontalPortScan:     539465
+
+Identificamos que el dato identificación de conexión (uid) no es relevante para nuestro estudio por lo tanto procedemos a eliminarlo.
 
 
 ### **Tratamiento de datos perdidos**
 
+En este capitulo vamos explorar datos perdidos para ello nos soportaremos sobre las librerías DataExplorer y VIM.
+
+![**Explorar datos pérdidos**](captura2.PNG){withd=20%}
 
 ### **Tratamiento de outliers**
 ### **Transformación de variables**
