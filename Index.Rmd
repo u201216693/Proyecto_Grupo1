@@ -12,6 +12,10 @@ fontsize: 10pt
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+## **OBJETIVO**
+
+	- Identificar principales tipo de ataques en IOT
+	- Determinar si un evento identificado es benigno o maligno. 
 
 ## **INTRODUCCIÓN**
 
@@ -39,8 +43,17 @@ Para el presente analisis se han considerado los siguientes pasos:
 A continuación se procede con la exploración de datos con la finalidad deidentificar nuestras variables representativas, para estefin leemos los datos de nuestro dataset.
 
   ![**Estructura de Datos**](Resumen_Estructura_Datos.PNG){withd=40%}
+  
+En la gráfica se identifica **23 variables** iniciales y **1008748** registros, así como los tipos de variables y datos estadísticos como la media, mediana por cada variable.
+Evaluamos la variable target **label Benign y Malicious**. El resultado es el siguiente:
+
+- Benign      469275 (0.4652) 
+- Malicious   539473 (0.5348)
+
 
 ### **Tratamiento de datos perdidos**
+
+
 ### **Tratamiento de outliers**
 ### **Transformación de variables**
 ### **Creación de variables dummy**
