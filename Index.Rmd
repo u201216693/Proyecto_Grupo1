@@ -3,6 +3,8 @@ title: "Analisis de Trafico y modelo predictivo para la detección de eventos ma
 author: "Grupo1 (Rosa Valencia - Ydael Vargas - Elizabeth Longa)"
 date: 'Fecha: 2022-05-29'
 output: html_document
+fontsize: 10pt
+toc: TRUE
 ---
 
 ```{r setup, include=FALSE}
@@ -34,7 +36,7 @@ Para el presente analisis se han considerado los siguientes pasos:
 ### **Identificación de las variables**
 A continuación se procede con la exploración de datos con la finalidad deidentificar nuestras variables representativas, para estefin leemos los datos de nuestro dataset.
 
-
+  ![**Estructura de Datos**](Resumen_Estructura_Datos.PNG){withd=40%}
 
 ### **Tratamiento de datos perdidos**
 ### **Tratamiento de outliers**
@@ -43,19 +45,5 @@ A continuación se procede con la exploración de datos con la finalidad deident
 ### **Identificación de variables con variancia cero o casi cero**
 ### **Identificación de predictores correlacionados**
 
-
-```{r cars}
-summary(cars)
-```
-
-## Including Plots
-
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
 
 
