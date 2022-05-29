@@ -21,9 +21,27 @@ Uno de los métodos clave para prevenir este tipo de ataques es el despliegue de
 
 Este documento utilizó el conjunto de datos IoT-23 (CTU-IoT-Malware-Capture-1-1) archivo **conn.log.labeled** [https://www.stratosphereips.org/datasets-iot23]. Estos datos se basan en el tráfico de red obtenido de dispositivos de Internet de las cosas (IoT) conregistros queevidencian detección de malware y capturas benignas.
 
+Para el presente analisis se han considerado los siguientes pasos:
 
-```{r datos$label}
-table(datos$label)
+	- Identificación de las variables
+	- Tratamiento de datos perdidos
+	- Tratamiento de outliers
+	- Transformación de variables
+	- Creación de variables dummy
+	- Identificación de variables con variancia cero o casi cero
+	- Identificación de predictores correlacionados
+
+### **Identificación de las variables**
+### **Tratamiento de datos perdidos**
+### **Tratamiento de outliers**
+### **Transformación de variables**
+### **Creación de variables dummy**
+### **Identificación de variables con variancia cero o casi cero**
+### **Identificación de predictores correlacionados**
+
+
+```{r cars}
+summary(cars)
 ```
 
 ## Including Plots
@@ -36,4 +54,4 @@ plot(pressure)
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
 
--Prueba-
+
