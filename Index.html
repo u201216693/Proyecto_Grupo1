@@ -9,11 +9,10 @@
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
-<meta name="author" content="Rosa Valencia &amp; Ydael Vargas &amp; Elizabeth Longa" />
+<meta name="author" content="Grupo1 (Rosa Valencia - Ydael Vargas - Elizabeth Longa)" />
 
-<meta name="date" content="2022-05-18" />
 
-<title>Analisis de Trafico Malicioso en Equipos IOT</title>
+<title>Analisis de Trafico y modelo predictivo para la detección de eventos maliciosos en Equipos IOT</title>
 
 <script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
 // be compatible with the behavior of Pandoc < 2.8).
@@ -363,24 +362,54 @@ pre code {
 
 
 
-<h1 class="title toc-ignore">Analisis de Trafico Malicioso en Equipos
-IOT</h1>
-<h4 class="author">Rosa Valencia &amp; Ydael Vargas &amp; Elizabeth
-Longa</h4>
-<h4 class="date">2022-05-18</h4>
+<h1 class="title toc-ignore">Analisis de Trafico y modelo predictivo
+para la detección de eventos maliciosos en Equipos IOT</h1>
+<h4 class="author">Grupo1 (Rosa Valencia - Ydael Vargas - Elizabeth
+Longa)</h4>
+<h4 class="date">Fecha: 2022-05-29</h4>
 
 </div>
 
 
-<div id="r-markdown" class="section level2">
-<h2>R Markdown</h2>
-<p>This is an R Markdown document. Markdown is a simple formatting
-syntax for authoring HTML, PDF, and MS Word documents. For more details
-on using R Markdown see <a href="http://rmarkdown.rstudio.com" class="uri">http://rmarkdown.rstudio.com</a>.</p>
-<p>When you click the <strong>Knit</strong> button a document will be
-generated that includes both content as well as the output of any
-embedded R code chunks within the document. You can embed an R code
-chunk like this:</p>
+<div id="introducción" class="section level2">
+<h2><strong>INTRODUCCIÓN</strong></h2>
+<p>Internet de las cosas (IoT) es una de las tecnologías líderes en la
+actualidad y se considera una extensión natural de Internet al
+incorporar sensores y comunicaciones de máquina a máquina. Las
+aplicaciones de IoT han aparecido en una variedad de dominios que
+incluyen atención médica, estado físico, administración de energía en el
+hogar, automatización de aulas, ciudades inteligentes y muchos más. Una
+aplicación típica de IoT consta de tres capas; la capa de percepción, la
+capa de red y la capa de aplicación. La capa de percepción es
+responsable de detectar y recopilar información sobre el entorno y
+enviarla a la capa de red. Por ejemplo, las cámaras de vigilancia son un
+tipo de sensor que reconoce eventos inusuales como el movimiento
+mediante sensores. La capa de red/transporte se considera un vínculo
+entre la capa de percepción y la nube. Esta capa consta de muchos
+protocolos de Internet y tiene que integrar la comunicación.</p>
+<p>IoT es vulnerable a los riesgos de seguridad en cada capa
+arquitectónica y ha enfrentado desafíos de seguridad desde su aparición.
+Los dispositivos IoT requieren sistemas de autenticación sólidos, que
+muchos dispositivos IoT no tienen debido a limitaciones de recursos como
+CPU o limitaciones de energía/batería. La capa de aplicación también
+está abierta a ataques de virus, gusanos y ataques de phishing.</p>
+<p>Uno de los métodos clave para prevenir este tipo de ataques es el
+despliegue de un sistema de detección de intrusos (IDS) sólido que pueda
+detectar cualquier tipo de intrusión. Actualmente, los IDS utilizan dos
+métodos principales para detectar ataques: basados en firmas y basados
+en anomalías. Los métodos basados en firmas dependen de los ataques
+conocidos y sus actualizaciones requieren mucho tiempo. Los ataques
+basados en anomalías, por otro lado, se basan en datos y dependen de que
+la máquina comprenda el comportamiento normal y rechace</p>
+</div>
+<div id="metodología" class="section level2">
+<h2><strong>METODOLOGÍA</strong></h2>
+<p>Este documento utilizó el conjunto de datos IoT-23
+(CTU-IoT-Malware-Capture-1-1) archivo <strong>conn.log.labeled</strong>
+[<a href="https://www.stratosphereips.org/datasets-iot23" class="uri">https://www.stratosphereips.org/datasets-iot23</a>]. Estos
+datos se basan en el tráfico de red obtenido de dispositivos de Internet
+de las cosas (IoT) conregistros queevidencian detección de malware y
+capturas benignas.</p>
 <pre class="r"><code>summary(cars)</code></pre>
 <pre><code>##      speed           dist       
 ##  Min.   : 4.0   Min.   :  2.00  
