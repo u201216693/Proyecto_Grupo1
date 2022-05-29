@@ -32,6 +32,10 @@ Para el presente analisis se han considerado los siguientes pasos:
 	- Identificación de predictores correlacionados
 
 ### **Identificación de las variables**
+A continuación se procede con la exploración de datos con la finalidad deidentificar nuestras variables representativas, para estefin leemos los datos de nuestro dataset.
+
+
+
 ### **Tratamiento de datos perdidos**
 ### **Tratamiento de outliers**
 ### **Transformación de variables**
