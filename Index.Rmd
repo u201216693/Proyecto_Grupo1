@@ -129,7 +129,11 @@ Seevalúa las variables categóricas:
 
 ![**Cuadro de Datos**](captura13.PNG){withd=20%}
 
-### **Identificación de predictores correlacionados**
+### **Conclusiones**
+
+- Las tecnologías IoT están transformando el mundo hoy y continuarán haciéndolo en los próximos años. Sin embargo, los riesgos y amenazas mencionados anteriormente son sin duda un desafío para las empresas del sector del Internet de las Cosas que quieren brindar un servicio eficiente, seguro y limpio que proteja los datos de los usuarios.
+- Machine Learning ayudará a los equipos de seguridad de IoT a realizar predicciones y respuestas inteligentes basadas en el comportamiento anterior. En el caso de vulnerabilidades y ataques conocidos, como la denegación de servicio distribuida, compara el comportamiento actual de la red con patrones de comportamiento de ejemplos de ataques y toma medidas de protección.
+- Para protegerse contra vulnerabilidades desconocidas y ataques de día cero, los modelos ML monitorean los dispositivos IoT y la actividad de la red para detectar comportamientos fuera de lo común en tiempo real y tomar medidas de protección de inmediato.
 
 
 
