@@ -100,10 +100,35 @@ Tambien eliminamos la variabla ts que es la marca de tiempo de la captura(de man
 
 ### **Imputación de datos pérdidos**
 
+Se evalúan los datos perdidos en la recoleccion de datos, existes los siguientes mecanismo:
+**MCAR**: Datos perdidos completamente aleatorio, se recomienda imputacion, eliminar reducirá el tama?o de la muestra, pero no ocasionara sesgo
+**MAR**:  Datos perdidos al azar, se recomienda imputacion, no es ideal eliminar, puede conducir a sesgos
+**MNAR**: Datos perdidos no aleatorios, no es recomendable la imputacion.
 
-### **Transformación de variables**
-### **Creación de variables dummy**
+Para el presente caso de estudio seleccionamos el mecanismos **MNAR** para el analisis de las variables de duration, resp_bytes, orig_bytes, missed_bytes. Remplazamos los Nas encontrados con el valor "0" y convertimos los datos a tipo numérico (duration, orig_bytes, resp_bytes).
+
+![**Análisis de Variables**](captura10.PNG){withd=20%}
+
+Analizar correlacion entre variables numericas. Según el gráfico de correlación se elimina , orig_pkts y orig_ip_bytes se correlacionan, de manera similar con resp_pkts y resp_ip_bytes.
+
+![**Gráfico de correlación**](captura8.PNG){withd=20%}
+
+### **Detección de Outliers**
+Se analiza como queda la imputación
+
+![**Cuadro de Datos**](captura11.PNG){withd=20%}
+
+Seevalúa las variables categóricas:
+
+- **proto**         tcp, udp, icmp
+- **conn_state**    OTH, REJ, RSTOS0, RSTR, RSTRH, S0, SF, SH 
+- **label**         Benign, Malicious
+
+
 ### **Identificación de variables con variancia cero o casi cero**
+
+![**Cuadro de Datos**](captura13.PNG){withd=20%}
+
 ### **Identificación de predictores correlacionados**
 
 
