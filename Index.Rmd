@@ -171,6 +171,45 @@ Max.        107.00
  
 Cantidad de outliers segun el filtro: **263**
 
+### **Normalización**
+
+Como primer paso recodificamos la variable duration de timedelta 64 a segundos.
+
+![**Cuadro de Datos**](captura17.PNG){withd=20%}
+
+Luego se remueve los registros duplicados: 8946
+A continuación se evalúa las variables categóricas
+
+Evaluando las variables categoricas 
+
+**proto**
+icmp	555
+tcp  	6981
+udp 	1410
+
+**conn_state**
+OTH		555
+REJ		3960
+RSTOS0	38
+RSTR	1
+RSTRH	11
+S0		2964
+SF		1409
+SH 		8
+
+**label**
+Benign		3349
+Malicious 	5597
+
+Ordenamos las columnas
+
+![**Cuadro de Datos**](captura18.PNG){withd=20%}
+
+Convertir a factor y recodificar la variable label. La data está balanceada.
+ 
+- Benign		468485
+- Malicious 	530561
+
 ### **Identificación de variables con variancia cero o casi cero**
 
 ![**Cuadro de Datos**](captura13.PNG){withd=20%}
