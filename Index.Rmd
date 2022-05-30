@@ -156,13 +156,18 @@ Resumen estadístico outliers2
 - Max.            4.00 
                   
  
-duration,se vavisualizar undiagrama de cajas
-Presenta outliers
-captura15
-haremos un corte para elminar outliers
-Resumen outliers3
-- Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-- 0.00    3.00    3.00    2.87    3.00  107.00 
+**duration**,se va visualizar undiagrama de cajas
+
+![**Cuadro de Datos**](captura16.PNG){withd=20%} 
+
+Resumen estadístico outliers3
+Min.        0.00
+1st Qu.     3.00
+Median      3.00
+Mean        2.87
+3rd Qu.     3.00
+Max.        107.00
+                   
  
 Cantidad de outliers segun el filtro: **263**
 
