@@ -214,6 +214,18 @@ Convertir a factor y recodificar la variable label. La data está balanceada.
 
 ![**Cuadro de Datos**](captura13.PNG){withd=20%}
 
+### **Identificación de predictores correlacionados**
+ENTRENANDO CON REGRESION LOGISTICA, ARBOLES DE DECISION Y NAIVE BAYES
+
+Definiendo los predictores y la variable objetivo:
+
+![**Cuadro de Datos**](captura19.PNG){withd=20%}
+
+Prediciendo la clase en el test con Naive Bayes
+
+![**Cuadro de Datos**](captura20.PNG){withd=20%}
+
+
 ### **Conclusiones**
 
 - Las tecnologías IoT están transformando el mundo hoy y continuarán haciéndolo en los próximos años. Sin embargo, los riesgos y amenazas mencionados anteriormente son sin duda un desafío para las empresas del sector del Internet de las Cosas que quieren brindar un servicio eficiente, seguro y limpio que proteja los datos de los usuarios.
