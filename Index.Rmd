@@ -12,6 +12,7 @@ fontsize: 10pt
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+
 ## **OBJETIVO**
 
 	- Identificar principales tipo de ataques en IOT
@@ -118,12 +119,52 @@ Se analiza como queda la imputación
 
 ![**Cuadro de Datos**](captura11.PNG){withd=20%}
 
-Seevalúa las variables categóricas:
+Se evalúa las variables categóricas:
 
 - **proto**         tcp, udp, icmp
 - **conn_state**    OTH, REJ, RSTOS0, RSTR, RSTRH, S0, SF, SH 
 - **label**         Benign, Malicious
 
+**orig_pkts**,se va visualizar un diagrama de cajas
+
+![**Cuadro de Datos**](captura14.PNG){withd=20%}
+
+Total: 202024
+Resumen estadístico outliers1
+
+- Min.        0.00
+- 1st Qu.     3.00
+- Median      3.00 
+- Mean        3.48
+- 3rd Qu.     3.00   
+- Max.        60.00 
+                   
+Se trata de eliminar outliers
+veamos la cantidad de outliers segun el filtro , 8686 = 0.08%
+ 
+**resp_pkts**,se va visualizar un diagrama de cajas
+
+![**Cuadro de Datos**](captura15.PNG){withd=20%}
+
+Resumen estadístico outliers2
+
+- Min.            1.00
+- 1st Qu.         1.00
+- Median          1.00 
+- Mean            1.12
+- 3rd Qu.         1.00
+- Max.            4.00 
+                  
+ 
+duration,se vavisualizar undiagrama de cajas
+Presenta outliers
+captura15
+haremos un corte para elminar outliers
+Resumen outliers3
+- Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+- 0.00    3.00    3.00    2.87    3.00  107.00 
+ 
+Cantidad de outliers segun el filtro: **263**
 
 ### **Identificación de variables con variancia cero o casi cero**
 
